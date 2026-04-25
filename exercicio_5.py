@@ -55,3 +55,18 @@ Resposta:
 Não
 
 """
+
+def localiza_BRCA1():
+    cromossomo =  input("Digite o cromossomo de uma variante. Ele virá escrito como texto e da seguinte forma 'chr1', 'chr2', etc: ")
+    posicao_variante = int(input("Digite a posição da variante. Ela deverá ser um número inteiro: "))
+    genoma_ref = input("Digite a identificação do genoma de referência. Ela deverá ser 'hg19' ou 'hg38': ")
+
+    if cromossomo == "chr17" and 41196312 <= posicao_variante <= 41277500 and genoma_ref == "hg19":
+        return "Sim"
+    elif cromossomo == "chr17" and 43044295 <= posicao_variante <= 43125483 and genoma_ref == "hg38":
+        return "Sim"
+    else:
+            return  "Não"
+  
+analise_variante = localiza_BRCA1()
+print(analise_variante)
