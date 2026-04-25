@@ -21,9 +21,9 @@ Dica: Lembre do comando de resto da divisão inteira!
 def par_ou_impar():
     numero = int(input("Digite um número qualquer: "))
     if numero % 2 ==0:
-        return(f"O número {numero} é PAR")
+        return(f"O número {numero} é Par")
     else:
-        return(f"O número {numero} é ÍMPAR")
+        return(f"O número {numero} é Ímpar")
 
 
 resultado = par_ou_impar()
