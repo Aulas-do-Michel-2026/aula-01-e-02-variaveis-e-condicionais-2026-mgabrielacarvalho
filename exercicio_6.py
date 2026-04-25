@@ -68,10 +68,10 @@ def cambio ():
 
     elif pais == "Japão":
             reais = float(input("Digite a quantidade de Reais que deseja converter: "))
-            yenes = reais * 180
+            yenes = reais * 30
             print (f"Você receberá {yenes:.2f} JPY")
 
     else:
-        print (f"Não temos a moeda circulante em {pais} ")
+        print ("Não temos essa moeda em caixa.")
 
 cambio()
