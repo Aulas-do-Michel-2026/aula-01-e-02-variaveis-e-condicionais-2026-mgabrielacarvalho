@@ -37,3 +37,16 @@ Resposta:
 Sim
 
 """
+
+def localiza_BRCA1():
+    cromossomo =  input("Digite o cromossomo de uma variante. Ele virá escrito como texto e da seguinte forma 'chr1', 'chr2', etc: ")
+    posicao_variante = int(input("Digite a posição da variante. Ela deverá ser um número inteiro: "))
+
+    if cromossomo == "chr17" and 41196312 <= posicao_variante <= 41277500:
+        return "Sim"
+    else:
+        return  "Não"
+
+  
+analise_variante = localiza_BRCA1()
+print(analise_variante)
