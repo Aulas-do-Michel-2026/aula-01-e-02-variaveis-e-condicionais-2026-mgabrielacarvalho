@@ -6,15 +6,16 @@ def ident_variante_relevante ():
     impacto = input ("Digite o impacto da variante (ALTO ou BAIXO): ").upper()
 
     if reads < 10 or vaf < 20:
-        print ("não é relevante, pois deve ser artefato")
+        return "Não é relevante"
 
     elif impacto =="BAIXO":
-        print ("não é relevante")
+        return "Não é relevante"
     
     elif impacto =="ALTO" and freq_pop > 5 and  gene not in ["HFE", "MEFV", "GJB2"]:
-       print ("é relevante")
+       return "Não é relevante"
     
     else:
-       print ("é relevante")
+       return "É relevante"
     
-ident_variante_relevante ()
+relevancia = ident_variante_relevante ()
+print(relevancia)
