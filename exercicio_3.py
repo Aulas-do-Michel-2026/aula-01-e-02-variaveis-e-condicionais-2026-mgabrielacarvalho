@@ -17,3 +17,14 @@ Digite um número:
 
 Dica: Lembre do comando de resto da divisão inteira!
 """
+
+def par_ou_impar():
+    numero = float(input("Digite um número qualquer: "))
+    if numero % 2 ==0:
+        return(f"O número {numero} é PAR")
+    else:
+        return(f"O número {numero} é ÍMPAR")
+
+
+resultado = par_ou_impar()
+print(resultado)
