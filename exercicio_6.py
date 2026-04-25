@@ -52,3 +52,26 @@ Qual país você vai viajar? China
 Resposta:
 Não temos essa moeda em caixa.
 """
+
+def cambio ():
+    pais = input("Informe o país de destino: ")
+
+    if pais == "Estados Unidos":
+        reais = float(input("Digite a quantidade de Reais que deseja converter: "))
+        dolares = reais / 5
+        print (f"Você receberá {dolares:.2f} USD")
+
+    elif pais == "Argentina":
+            reais = float(input("Digite a quantidade de Reais que deseja converter: "))
+            pesos = reais * 180
+            print (f"Você receberá {pesos:.2f} ARS")
+
+    elif pais == "Japão":
+            reais = float(input("Digite a quantidade de Reais que deseja converter: "))
+            yenes = reais * 180
+            print (f"Você receberá {yenes:.2f} JPY")
+
+    else:
+        print (f"Não temos a moeda circulante em {pais} ")
+
+cambio()
